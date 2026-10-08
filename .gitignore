@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+.env
+*.egg-info/
+.idea/
+/treefile.txt
+/.idea/inspectionProfiles/profiles_settings.xml
+/.idea/.gitignore
+/.idea/modules.xml
+/.idea/PythonRayMultiDockerImage.iml
+/.idea/vcs.xml
+/src/python_ray.egg-info/dependency_links.txt
+/src/python_ray.egg-info/PKG-INFO
+/src/python_ray.egg-info/SOURCES.txt
+/src/python_ray.egg-info/top_level.txt
