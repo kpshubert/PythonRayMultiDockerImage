@@ -7,6 +7,7 @@ services:
     command: >
       ray start --head
       --port=6379
+      --num-cpus=2
       --dashboard-host=0.0.0.0
       --dashboard-port=8265
       --ray-client-server-port=10001
@@ -24,7 +25,7 @@ services:
 
   ray-worker:
     image: python-ray:dev
-    command: ray start --address=ray-head:6379 --block
+    command: ray start --address=ray-head:6379 --num-cpus=2 --block
     shm_size: "2gb"
     depends_on:
       ray-head:
